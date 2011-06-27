@@ -1,0 +1,213 @@
+/*
+Theme Name: IP3 Digital
+Theme URI: http://joelwarren.tumblr.com
+Author: Joel Warren
+Author URI: http://joelwarren.tumblr.com
+Version: 1.0
+
+*/
+
+/* =Structure
+-------------------------------------------------------------- */
+
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;}
+body{
+  line-height:1;}
+ol,ul{
+  list-style:none;}
+blockquote,q{
+  quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;}
+ins{
+  text-decoration:none;}
+del{
+  text-decoration:line-through;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;}
+  
+html {background: url('images/html-bg.jpg') #f5f5f5;}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 1.5}
+
+#page, #page-footer {
+	width: 940px;
+	padding: 20px 0 20px 20px;
+	margin: 45px auto 10px;
+	background: #fff;
+	z-index: 2;
+	position: relative;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0px 0px 10px #e5e5e5;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.05);}
+#page-footer {
+	font-size: 12px;
+	padding: 10px 20px;
+	margin: 0 auto 45px;}
+	#title {
+		margin: 16px 23px 26px;
+		float: left;}
+	#title span {
+		display: none;}
+	#access {
+		float: right;
+		margin: 16px 20px 26px;}
+	#access ul {list-style: none;}
+	#access li {
+		float: left;
+		font-size: 16px;}
+		#access a, #access a:link, #access a:visited {
+			line-height: 43px;
+			display: block;
+			color: #333333;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			text-decoration: none;
+			padding: 0 20px;}
+		#access a:hover {
+			background: #dc008c;
+			color: #fff;}
+	#slider {
+		clear: both;
+		overflow: hidden;
+		height: 209px;
+		width: 920px;
+		margin: 0 0 20px;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;}
+	#page-title {
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 1;
+		color: #595959;
+		padding: 0 0 50px;
+		margin: 0 0 12px;
+		background: url('images/pagetitle-bg.png') bottom center no-repeat;}
+		#page-title strong {
+			color: #ad208b;}
+	.home .column {
+		width: 290px;
+		float: left;
+		margin: 0 20px 20px 0;}
+	.home .entry-content img {
+		display: none;}
+	h3 {
+		font-family: 'Yanone Kaffeesatz', arial, serif;
+		line-height: 43px;}
+	h3 img {display: block; float: left; margin: 0 10px 0 0;}
+	.more-link:link, .more-link:visited {
+		display: block;
+		line-height: 42px;
+		padding: 0 0 0 14px;
+		width: 150px;
+		color: #707070;
+		text-decoration: none;
+		clear: both;
+		margin: 20px 10px 0 0;
+		float: right;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background: url('images/plus-grey.png') no-repeat 143px 17px #dcdcdc;}
+	.more-link:hover {
+		background: url('images/plus-white.png') no-repeat 143px 17px #dc008c;
+		color: #fff;}
+	.credit {
+		float: right;}
+	.copyright {float: left;}
+	.sitemap {
+		float: left;
+		margin: 0 10px;}
+	.sitemap li {
+		float: left;
+		padding: 0 10px;}
+	#bg-img {
+		width: 682px;
+		height: 607px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('images/bg-img.png') no-repeat;}
+	.entry-content ul {
+		list-style: disc;
+		margin: 0 40px 20px;}
+	.entry-content li {
+		line-height: 24px;}
+a:link, a:visited {
+	color: #c0008c;}
+a:hover {
+	color: #870764;
+	text-decoration: none;}
+a:active {
+	color: #cd4caa;
+	text-decoration: none;}
+	 
+/* ** ** Common Addative Classes ** ** */
+.left, .alignleft  { float:left}
+img.alignleft {margin: 0 20px 15px 0;}
+.right, .alignright { float:right}
+img.alignright {margin: 0 0 15px 20px;}
+
+.clear { clear:both; display:block; overflow:hidden; visibility:hidden; width:0px; height:0px;}
+
+.align_right    { text-align:right;}
+.align_left     { text-align:left;}
+.align_center   { text-align:center;}
+.align_justify  { text-align:justify;}
+
+/* ** ** Header Styles ** ** */
+h1, h2, h3, h4, h5 {margin:0 0 20px;}
+h1 {	font-size:28px;} 
+h2 {	font-size:22px;} 
+h3 {	font-size:28px;} 
+h4 {	font-size:17px;} 
+h5 {	font-size:14px;} 
+h6 {	font-size:14px;}
+
+/* ** ** paragraph styling ** ** */
+p {margin:0 0 24px;}
+	img.left {float:left;margin:24px 24px 10px 0;padding:0;}
+	img.right {float:right;margin:24px 0 10px 24px;}
+
+strong   			{font-weight:bold;}
+em, dfn  		{font-style:italic;}
+dfn 	 			{font-weight:bold;}
+sup, sub 		{line-height:0;}
+abbr, acronym  	{border-bottom:1px dashed #ccc;}
+address 			{margin:0 0 1.5em;font-style:italic;}
+del 				{color:#666;}
+pre, code, tt 	{font:1em 'andale mono', 'lucida console', monospace;line-height:1.5; display:block;}
+code 			{background-color:#d5d2d8; display:block; padding:0px 2px 4px 26px; background:#fff url(code.jpg) no-repeat left top; line-height:1.67em;}
+pre 				{margin:1.5em 0;white-space:pre;}
